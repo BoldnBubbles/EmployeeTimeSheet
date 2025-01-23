@@ -8,7 +8,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #254441;
+    background-color: #F7CF8F;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -18,8 +19,24 @@ body {
 header {
     padding: 2rem 0;
     text-align: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #273043;
+    color: #273043
 }
+
+h1 {
+    text-align: center;
+  }
+
+p {
+    text-align: center;
+}
+
+  div {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+  }
 
 /* Main content area */
 main {
@@ -32,21 +49,22 @@ main {
  footer {
     text-align: center;
     padding: 1rem 0;
-    border-top: 1px solid #eee;
-    color: #666;
+    border-top: 1px solid #273043;
+    color: #273043;
 }
 
 /* Navigation styling */
 nav {
     padding: 1rem 0;
     margin: 1rem 0;
-}
+} 
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding: 0.5rem 0;
 }
 
 nav a {
@@ -59,12 +77,16 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #f0f0f0;
-    color: #000;
+    background-color: #7DE2D1;
+    color: #273043;
 }
 
 /* Optional: Add an active state for the current page */
 nav a.active {
-    background-color: #333;
+    background-color: #5C80BC;
     color: white;
+    font-weight: bold;
 }
+
+
+/* Colors: Sand=F7CF8F, Brown/buff=ECBA89, Emerald=81D68B */
