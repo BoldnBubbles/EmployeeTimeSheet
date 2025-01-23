@@ -44,8 +44,8 @@ def delete_entry(entry_id):
     db.session.commit()
     return redirect(url_for('hours'))
 
-@app.route('/budget', methods=['GET', 'POST'])
-def budget():
+@app.route('/track', methods=['GET', 'POST'])
+def track():
     if request.method == 'POST':
         employee_name = request.form['employee_name']
         employee = EmployeeSheet.query.filter_by(employee_name=employee_name).first()
@@ -57,8 +57,8 @@ def budget():
         else:
             result = "Invalid data or employee not found."
 
-        return render_template('budget.html', result=result)
-    return render_template('budget.html', result=None)
+        return render_template('track.html', result=result)
+    return render_template('track.html', result=None)
 
 @app.route('/profiles')
 def profiles():
